@@ -78,7 +78,7 @@ const Garenties = ({type}) => {
       >
         <form onSubmit={handelSubmit}>
 
-        <div style={{ width: "100%" }}>
+        <div style={{ width: "100%",position:'relative' }}>
           <div>
           <div style={{ display: "flex",marginBottom:'20px' }}>
                 <FaFolderOpen
