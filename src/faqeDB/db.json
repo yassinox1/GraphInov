@@ -1,0 +1,34 @@
+{
+  "questions": [
+    { "id": 1, "title": "Particulier","color": "#28AEE4" },
+    { "id": 2, "title": "Entreprise", "color": "#F36886" },
+    { "id": 3, "title": "Indepandant", "color": "#53216D" }
+  ],
+  "answers": [
+    [
+      { "id": 4, "title": "Offre Voiture", "color": "#92D050" },
+      { "id": 5, "title": "Offre Vie", "color": "#F36886" }
+    ],
+    [
+      { "id": 6, "title": "Offre Santé", "color": "#92D050" },
+      { "id": 7, "title": "Offre Prévoyance", "color": "#F36886" }
+    ],
+    [
+      { "id": 8, "title": "Offre Santé Indépandant", "color": "#92D050" },
+      { "id": 9, "title": "Offre Prévoyance Indépandant", "color": "#F36886" }
+    ] 
+  ],
+  "cordonee" : {
+
+  },
+  "correspandont" : {
+    
+  },
+  "population" : {
+    
+  },
+  "infoLs" : {
+    
+  }
+       
+}

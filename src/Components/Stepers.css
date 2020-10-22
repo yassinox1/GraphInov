@@ -1,0 +1,88 @@
+.alert-appear {
+    transform: scale(0.1);
+  }
+  .alert-appear-active {
+ 
+    transform: scale(1); 
+    transition: transform 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .alert-appear-done{
+   
+     
+  }
+  
+  .butttonAnimation-appear {
+    transform: scale(0.1);
+  }
+  .butttonAnimation-appear-active {
+ 
+    transform: scale(1); 
+    transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .butttonAnimation-appear-done{}
+
+
+  .butttonAnimation-enter {
+    transform: scale(0.1);
+  }
+  .butttonAnimation-enter-active {
+ 
+    transform: scale(1); 
+    transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .butttonAnimation-enter-done{}
+
+  .fade-appear {
+    transform: translateX(-150%);
+  }
+  .fade-appear-active {
+ 
+    transform: translateX(0%);
+    transition: transform 2s, 
+  }
+  .fade-appear-done{
+   
+    transform: translateX(0%);
+    transition: transform 2s, 
+  }
+  
+  .widget-appear {
+    transform: translateX(-150%);
+  }
+  .widget-appear-active {
+ 
+    transform: translateX(0%);
+    transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1), 
+  }
+  .widget-appear-done{
+   
+    transform: translateX(0%);
+    transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1), 
+  }
+  .widget-enter {
+    opacity: 0;
+  }
+  .widget-enter-active {
+ 
+    opacity: 1;
+    transition: opacity 2s, 
+  }
+  .widget-enter-done{
+   
+    opacity: 10;
+    transition: opacity 2s, 
+  }
+  .alert-exit {
+    opacity: 1;
+  }
+  .alert-exit-active {
+ 
+    opacity: 0;
+    transition: opacity 2s, 
+  }
+  .alert-exit-done{
+   
+    opacity: 0;
+    transition: opacity 2s, 
+  }
+  

@@ -1,0 +1,711 @@
+webpackHotUpdate("main",{
+
+/***/ "./src/Components/StepWidget.js":
+/*!**************************************!*\
+  !*** ./src/Components/StepWidget.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _common_InputTextField__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./common/InputTextField */ "./src/Components/common/InputTextField.js");
+/* harmony import */ var react_transition_group__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-transition-group */ "./node_modules/react-transition-group/index.js");
+/* harmony import */ var react_transition_group__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_transition_group__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _context_product_MyContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../context/product/MyContext */ "./src/context/product/MyContext.js");
+/* harmony import */ var _Stepers_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Stepers.css */ "./src/Components/Stepers.css");
+/* harmony import */ var _Stepers_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_Stepers_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _common_Button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./common/Button */ "./src/Components/common/Button.js");
+/* harmony import */ var _SteperButton__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./SteperButton */ "./src/Components/SteperButton.js");
+/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-icons/fa */ "./node_modules/react-icons/fa/index.esm.js");
+var _jsxFileName = "C:\\Users\\ybengottib\\Desktop\\graphtalk\\graph\\src\\Components\\StepWidget.js";
+
+
+
+
+
+
+
+
+
+const Step2 = ({
+  title,
+  inTransation,
+  setInTransation
+}) => {
+  const myContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_context_product_MyContext__WEBPACK_IMPORTED_MODULE_3__["default"]);
+  const {
+    activeStep,
+    add_corrdonee,
+    add_correspondant,
+    add_population,
+    addPopulation,
+    add_info
+  } = myContext;
+  const [data, setData] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
+    siret: "",
+    raisonSociale: "",
+    codeNAV: "",
+    codeIDCC: "",
+    codePostale: "",
+    ville: "",
+    adresse: "",
+    civilite: "",
+    name: "",
+    prenom: "",
+    fonction: "",
+    tele: "",
+    email: "",
+    populationAssurable: "",
+    nombreDeSalaries: "",
+    MoyenneDage: "",
+    regimeSocile: "",
+    typeDeCoverture: "",
+    typeDoffre: "",
+    extension: "",
+    garanties: ""
+  });
+  const {
+    siret,
+    raisonSociale,
+    codeNAV,
+    codeIDCC,
+    codePostale,
+    ville,
+    adresse,
+    civilite,
+    name,
+    prenom,
+    fonction,
+    tele,
+    email,
+    populationAssurable,
+    nombreDeSalaries,
+    MoyenneDage,
+    regimeSocile,
+    typeDeCoverture,
+    typeDoffre,
+    extension,
+    garanties
+  } = data;
+
+  const onChange = e => {
+    setData({ ...data,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handelSubmit = e => {
+    e.preventDefault();
+
+    switch (activeStep) {
+      case 1:
+        return add_corrdonee({
+          siret,
+          raisonSociale,
+          codeNAV,
+          codeIDCC,
+          codePostale,
+          ville,
+          adresse
+        });
+
+      case 2:
+        return add_correspondant({
+          civilite,
+          name,
+          prenom,
+          fonction,
+          tele,
+          email
+        });
+
+      case 3:
+        return !addPopulation ? add_population({
+          populationAssurable,
+          nombreDeSalaries,
+          MoyenneDage,
+          regimeSocile
+        }) : add_info({
+          typeDeCoverture,
+          typeDoffre,
+          extension,
+          garanties
+        });
+
+      default:
+        return console.log('non');
+    }
+  };
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_transition_group__WEBPACK_IMPORTED_MODULE_2__["CSSTransition"], {
+    in: inTransation,
+    timeout: 2000,
+    classNames: "widget",
+    appear: true,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 97,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      height: '1000px',
+      backgroundColor: "#FFFFFF",
+      boxShadow: '0 0.46875rem 2.1875rem rgba(4, 9, 20, 0.03), 0 0.9375rem 1.40625rem rgba(4, 9, 20, 0.03), 0 0.25rem 0.53125rem rgba(4, 9, 20, 0.05), 0 0.125rem 0.1875rem rgba(4, 9, 20, 0.03)',
+      borderTopLeftRadius: '10% 15%',
+      borderBottomRightRadius: '10% 15%'
+    },
+    className: "p-5 container mb-5",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 103,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 107,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: title == "Ensmble Du Personelle" ? {
+      display: "flex",
+      marginBottom: "20px"
+    } : {
+      display: "flex",
+      borderBottom: "1px solid #00ADB5"
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 108,
+      columnNumber: 11
+    }
+  }, title == "Ensmble Du Personelle" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      display: 'flex'
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 116,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_7__["FaFolderOpen"], {
+    style: {
+      fontSize: "4em",
+      marginRight: '10px'
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 117,
+      columnNumber: 2
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 118,
+      columnNumber: 2
+    }
+  }, "Ensemble Du personelle")) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      display: 'flex'
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 123,
+      columnNumber: 15
+    }
+  }, title == "Coordonnées" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_7__["FaClipboardList"], {
+    style: {
+      fontSize: "4em",
+      color: "#00ADB5",
+      marginRight: '10px'
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 125,
+      columnNumber: 14
+    }
+  }) : title == "Correspandant" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_7__["FaIdCard"], {
+    style: {
+      fontSize: "4em",
+      color: "#00ADB5",
+      marginRight: '10px'
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 128,
+      columnNumber: 14
+    }
+  }) : title == "Structuration de l’Entreprise" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_7__["FaFolderMinus"], {
+    style: {
+      fontSize: "4em",
+      color: "#00ADB5",
+      marginRight: '10px'
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 132,
+      columnNumber: 14
+    }
+  }) : '', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    style: {
+      color: "#00ADB5"
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 135,
+      columnNumber: 16
+    }
+  }, title))), title == "Coordonnées" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    onSubmit: handelSubmit,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 141,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'space-between'
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 142,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 147,
+      columnNumber: 16
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_InputTextField__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    text: "N siret",
+    id: "siret",
+    type: "text",
+    name: "siret",
+    value: siret,
+    placeholder: "N\xB0 SIRET",
+    onChange: onChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 148,
+      columnNumber: 16
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_InputTextField__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    text: "Raison Sociale",
+    id: "Raison Sociale",
+    type: "text",
+    name: "raisonSociale",
+    value: raisonSociale,
+    placeholder: "Raison Sociale",
+    onChange: onChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 158,
+      columnNumber: 17
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_InputTextField__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    text: "Code NAV (APE)",
+    id: "Code NAV (APE)",
+    type: "text",
+    name: "codeNAV",
+    value: codeNAV,
+    placeholder: "Code NAV (APE)",
+    onChange: onChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 167,
+      columnNumber: 17
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_InputTextField__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    text: "Code activit\xE9 (IDCC)",
+    id: "Code activit\xE9 (IDCC)",
+    type: "text",
+    name: "codeIDCC",
+    value: codeIDCC,
+    placeholder: "Code activit\xE9 (IDCC)",
+    onChange: onChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 176,
+      columnNumber: 17
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_InputTextField__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    text: "Code Postale",
+    id: "Code Postale",
+    type: "text",
+    name: "codePostale",
+    value: codePostale,
+    placeholder: "Code Postale",
+    onChange: onChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 185,
+      columnNumber: 17
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_InputTextField__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    text: "Ville",
+    id: "Ville",
+    type: "text",
+    name: "ville",
+    value: ville,
+    placeholder: "Ville",
+    onChange: onChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 194,
+      columnNumber: 17
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_InputTextField__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    text: "Adress",
+    id: "Adress",
+    type: "text",
+    name: "adresse",
+    value: adresse,
+    placeholder: "Adress",
+    onChange: onChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 203,
+      columnNumber: 17
+    }
+  }), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_Button__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    type: "submit",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 213,
+      columnNumber: 19
+    }
+  }, "Add Coordonn\xE9es")))) : title == "Correspandant" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    onSubmit: handelSubmit,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 222,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_InputTextField__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    text: "Civilit\xE9",
+    id: "Civilit\xE9",
+    type: "text",
+    name: "civilite",
+    value: civilite,
+    placeholder: "Civilit\xE9",
+    onChange: onChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 223,
+      columnNumber: 17
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_InputTextField__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    text: "name",
+    id: "name",
+    type: "text",
+    name: "name",
+    value: name,
+    placeholder: "name",
+    onChange: onChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 232,
+      columnNumber: 17
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_InputTextField__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    text: "Pr\xE9nom",
+    id: "Pr\xE9nom",
+    type: "text",
+    name: "prenom",
+    value: prenom,
+    placeholder: "Pr\xE9nom",
+    onChange: onChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 241,
+      columnNumber: 17
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_InputTextField__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    text: "Fonction",
+    id: "Fonction",
+    type: "text",
+    name: "fonction",
+    value: fonction,
+    placeholder: "Fonction",
+    onChange: onChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 250,
+      columnNumber: 17
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_InputTextField__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    text: "T\xE9lephone",
+    id: "T\xE9lephone",
+    type: "text",
+    name: "tele",
+    value: tele,
+    placeholder: "T\xE9lephone",
+    onChange: onChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 259,
+      columnNumber: 17
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_InputTextField__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    text: "Email",
+    id: "Email",
+    type: "text",
+    name: "email",
+    value: email,
+    placeholder: "Email",
+    onChange: onChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 268,
+      columnNumber: 17
+    }
+  }), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_Button__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    type: "submit",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 277,
+      columnNumber: 17
+    }
+  }, "Add Correspondant"))) : title == "Structuration de l’Entreprise" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    onSubmit: handelSubmit,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 284,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_InputTextField__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    text: "Population Assurabl",
+    type: "select",
+    data: ["Ensemble de personel", 2, 3, 4],
+    name: "populationAssurable",
+    onChange: onChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 286,
+      columnNumber: 13
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_InputTextField__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    text: "Nombre de Salari\xE9e",
+    type: "select",
+    data: ["5 à 10", 2, 3, 4],
+    name: "nombreDeSalaries",
+    onChange: onChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 293,
+      columnNumber: 15
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_InputTextField__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    text: "Moyenne d'\xE0ge",
+    type: "select",
+    data: ["30 à 35 àge", 2, 3, 4],
+    name: "MoyenneDage",
+    onChange: onChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 300,
+      columnNumber: 15
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_InputTextField__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    text: "R\xE9gime Sociale",
+    type: "select",
+    data: ["Régime génerale", 2, 3, 4],
+    name: "regimeSocile",
+    onChange: onChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 307,
+      columnNumber: 15
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_Button__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    type: "submit",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 314,
+      columnNumber: 13
+    }
+  }, "Add Population"))) : title == "Ensmble Du Personelle" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    onSubmit: handelSubmit,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 322,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      display: "flex",
+      borderBottom: "1px solid #00ADB5"
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 323,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_7__["FaElementor"], {
+    style: {
+      fontSize: "3em",
+      color: "#00ADB5",
+      marginRight: '10px'
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 326,
+      columnNumber: 18
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    style: {
+      color: "#00ADB5"
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 327,
+      columnNumber: 17
+    }
+  }, "Structuration du contrat obligatoire", " ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_InputTextField__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    text: "Type De cobverture ",
+    type: "select",
+    data: ["Salarier Seul", 2, 3, 4],
+    name: "typeDeCoverture",
+    onChange: onChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 332,
+      columnNumber: 15
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_InputTextField__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    text: "Type d'offre",
+    type: "select",
+    data: ["Standar", 2, 3, 4],
+    name: "typeDoffre",
+    onChange: onChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 339,
+      columnNumber: 15
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      display: "flex",
+      borderBottom: "1px solid #00ADB5"
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 346,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_7__["FaReadme"], {
+    style: {
+      fontSize: "3em",
+      marginRight: '10px',
+      color: "#00ADB5"
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 349,
+      columnNumber: 18
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    style: {
+      color: "#00ADB5"
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 350,
+      columnNumber: 17
+    }
+  }, "Structuration des contrats Facultatifs")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_InputTextField__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    className: "my-2",
+    text: "Extension aux ayants droit",
+    type: "select",
+    data: ["oui", "non"],
+    name: "extension",
+    onChange: onChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 355,
+      columnNumber: 15
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_InputTextField__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    className: "my-2",
+    text: "Garanties optionnelles",
+    type: "select",
+    data: ["oui", "non"],
+    name: "garanties",
+    onChange: onChange,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 363,
+      columnNumber: 15
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_Button__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    type: "submit",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 371,
+      columnNumber: 17
+    }
+  }, "Add Info"))) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Step2);
+
+/***/ })
+
+})
+//# sourceMappingURL=main.0ddf13e60dba4ecc00f8.hot-update.js.map
