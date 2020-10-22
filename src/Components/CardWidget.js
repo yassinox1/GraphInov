@@ -47,7 +47,7 @@ const CardWidget = ({ title, color, w, id, handleChange, selectedID }) => {
     <div
       style={
         w
-          ? { width: w, cursor: "pointer" }
+          ? { width: w, cursor: "pointer",height:'300px' }
           : { width: "30%", cursor: "pointer" }
       }
       onClick={() => handleChange(id, title)}

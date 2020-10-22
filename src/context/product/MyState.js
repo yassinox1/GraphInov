@@ -45,7 +45,7 @@ const ProductState = (props) => {
       "Result",
     ],
 
-    stepContent: "Select campaign settings...",
+    stepContent: "",
     addCoordone: false,
     addCorrespondant: false,
     addPopulation: false,
