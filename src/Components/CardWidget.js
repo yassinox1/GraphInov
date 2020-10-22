@@ -86,7 +86,7 @@ const CardWidget = ({ title, color, w, id, handleChange, selectedID }) => {
 const Done = {
   backgroundColor: "#A6CB12",
   fontSize: "15px",
-  height: "25px",
+  height: "35px",
   width: "25px",
   borderRadius: "50%",
 };
