@@ -65,7 +65,7 @@ const Garenties = ({type}) => {
           justifyContent: "space-between",
           alignItems: "center",
           height: "1000px",
-          width: "90%",
+          width: "80%",
           backgroundColor: "#FFFFFF",
           margin: "auto",
           padding: "10px",
