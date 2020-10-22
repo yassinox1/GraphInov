@@ -75,10 +75,10 @@ const Garenties = ({type}) => {
           borderTopLeftRadius: "10% 15%",
           borderBottomRightRadius: "10% 15%",
         }}
-      >
+      ><div style={{ width: "100%" }}>
         <form onSubmit={handelSubmit}>
 
-        <div style={{ width: "100%",position:'relative' }}>
+        
           <div>
           <div style={{ display: "flex",marginBottom:'20px' }}>
                 <FaFolderOpen
@@ -292,12 +292,12 @@ const Garenties = ({type}) => {
               </div>
             </div>
           </div>
-        </div>
+        
               <div className="mt-5">
               {type==1? <ButtonField type="submit">Ajouter Garanties </ButtonField> :  <ButtonField type="submit">Ajouter Garanties</ButtonField>}
         <SteperButton />
               </div>
-        </form>
+        </form></div>
       </div>
     </>
   );
