@@ -94,30 +94,30 @@ const ProductState = (props) => {
       case 0:
         return dispatch({
           type: GET_STEP_CONTENT,
-          payload: "Select campaign settings...",
+          payload: "",
         });
       case 1:
         return dispatch({
           type: GET_STEP_CONTENT,
-          payload: "What is an ad group anyways?",
+          payload: "",
         });
       case 2:
         return dispatch({
           type: GET_STEP_CONTENT,
-          payload: "This is the bit I really care about!",
+          payload: "",
         });
       case 3:
         return dispatch({
           type: GET_STEP_CONTENT,
-          payload: "What is an ad group anyways?",
+          payload: "",
         });
       case 4:
         return dispatch({
           type: GET_STEP_CONTENT,
-          payload: "This is the bit I really care about!",
+          payload: "",
         });
       default:
-        return dispatch({ type: GET_STEP_CONTENT, payload: "Unknown step" });
+        return dispatch({ type: GET_STEP_CONTENT, payload: "" });
     }
   };
 
