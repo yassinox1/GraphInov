@@ -43,7 +43,7 @@ const ButtonField = (props) => {
             padding: "6px 12px",
             backgroundColor: "#FF9B9C",
             color: "#ffffff",
-            marginBottom : '30px'
+            marginBottom : '10px'
           }}>
             {props.children}
         </Button>

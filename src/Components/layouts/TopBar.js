@@ -1,6 +1,9 @@
-import React from "react";
+import React,{useContext} from "react";
+import ThemesContext from "../../context/themes/ThemesContext";
 import Navbar from "./Navbar"
 const TopBar = () => {
+  const themesContext = useContext(ThemesContext);
+  const { toggle_theames} = themesContext;
   return (
     <div>
       <nav class="navbar  " style={NavStyle}>
@@ -12,7 +15,9 @@ const TopBar = () => {
               width="270px"
               alt=""
             ></img>
+          
           </div>
+          
         </a>
       </nav>
       

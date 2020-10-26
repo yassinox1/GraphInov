@@ -154,7 +154,7 @@ const Step2 = ({ title, inTransation, setInTransation, height }) => {
                 {title == "Coordonnées" ? (
                   <FaClipboardList
                     style={{
-                      fontSize: "4em",
+                      fontSize: "2em",
                       color: "#00ADB5",
                       marginRight: "10px",
                     }}
@@ -162,7 +162,7 @@ const Step2 = ({ title, inTransation, setInTransation, height }) => {
                 ) : title == "Correspandant" ? (
                   <FaIdCard
                     style={{
-                      fontSize: "4em",
+                      fontSize: "2em",
                       color: "#00ADB5",
                       marginRight: "10px",
                     }}
@@ -170,7 +170,7 @@ const Step2 = ({ title, inTransation, setInTransation, height }) => {
                 ) : title == "Structuration de l’Entreprise" ? (
                   <FaFolderMinus
                     style={{
-                      fontSize: "4em",
+                      fontSize: "2em",
                       color: "#00ADB5",
                       marginRight: "10px",
                     }}
@@ -178,7 +178,7 @@ const Step2 = ({ title, inTransation, setInTransation, height }) => {
                 ) : title == "Choix des garantiess et tarif" ? (
                   <FaFolderMinus
                     style={{
-                      fontSize: "4em",
+                      fontSize: "2em",
                       color: "#00ADB5",
                       marginRight: "10px",
                     }}
@@ -186,7 +186,7 @@ const Step2 = ({ title, inTransation, setInTransation, height }) => {
                 ) : (
                   ""
                 )}
-                <h1 style={{ color: "#00ADB5" }}>{title}</h1>
+                <h4 style={{ color: "#00ADB5" }}>{title}</h4>
               </div>
             )}
           </div>

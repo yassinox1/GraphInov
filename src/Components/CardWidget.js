@@ -33,8 +33,8 @@ const CardWidget = ({ title, color, w, id, handleChange, selectedID }) => {
       <div>
         <FaCheckCircle
           style={{ 
-            height: '30px',
-    width: '30px',
+            height: '20px',
+    width: '20px',
             fontSize: "26px", fontWeight: "bold", color: "#92D050" }}
         />
       </div>
@@ -55,17 +55,17 @@ const CardWidget = ({ title, color, w, id, handleChange, selectedID }) => {
       <Card className={classes.root} style={{borderTopLeftRadius: '2.5% 5%',borderBottomRightRadius: '2.5% 5%',borderTopRightRadius: '2.5% 5%',borderBottomLeftRadius: '2.5% 5%'}}>
         <CardHeader action={<Nejma />} />
         <CardContent>
-          <h1
+          <h2
             style={{
               color: "#1E1812",
-              fontSize: "40px",
+              fontSize: "25px",
               fontStyle: "normal",
               fontWeight: "bold",
             }}
           >
             {title}
-          </h1>
-          <div style={{ fontSize: "7em", color: color }}>
+          </h2>
+          <div style={{ fontSize: "5em", color: color }}>
             {id == 1 ? (
               <MdPerson />
             ) : id == 2 ? (

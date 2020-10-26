@@ -7,7 +7,7 @@ const NavL = (props) => {
   const [tabItems, setTabs] = useState([
     {
       id: 1,
-      title: "New Activity",
+      title: "Nouvelle activité",
       icon: "tabitem__icon fas fa-child",
       content: "step 1 content",
       lien: "/",
@@ -15,7 +15,7 @@ const NavL = (props) => {
     },
     {
       id: 2,
-      title: "Client Area/CRM",
+      title: "Espace personne / CRM",
       icon: "tabitem__icon fas fa-users",
       content: "step 2 content",
       lien: "/client",
@@ -23,7 +23,7 @@ const NavL = (props) => {
     },
     {
       id: 3,
-      title: "Contract Area",
+      title: "Espace contrat",
       icon: "tabitem__icon fas fa-network-wired",
       content: "step 3 content",
       lien: "/contract",
@@ -31,23 +31,16 @@ const NavL = (props) => {
     },
     {
       id: 4,
-      title: "New Business",
+      title: "Affaire nouvelle",
       icon: "tabitem__icon fas fa-money-check-alt",
       content: "step 4 content",
       lien: "/Business",
       active: false,
     },
-    {
-      id: 5,
-      title: "New Proposition",
-      icon: "tabitem__icon fas fa-money-check-alt",
-      content: "step 4 content",
-      lien: "/Proposition",
-      active: false,
-    },
+    
     {
       id: 6,
-      title: "Claim Event Area",
+      title: "Espace sinistre",
       icon: "tabitem__icon fas fa-money-check-alt",
       content: "step 4 content",
       lien: "/area",

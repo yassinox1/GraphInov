@@ -14,8 +14,8 @@ import {
 const GarWidget = ({type,text,prix,text2,prix2,isSelected,blue}) => {
     return (
         <div
-        style={type==1? {borderLeft : blue?'20px solid #53216D' : '20px solid #1FB9F1',width: "340px",backgroundColor:'#FFFFFF',height:'150px',padding:'2px'} : type==2? { width: "440px",backgroundColor:'#FFFFFF',height:'150px',padding:'2px'} : {
-          width: "280px",backgroundColor:'#FFFFFF',height:'150px',padding:'2px'
+        style={type==1? {borderLeft : blue?'20px solid #53216D' : '20px solid #1FB9F1',width: "340px",backgroundColor:'#FFFFFF',height:'120px',padding:'2px'} : type==2? { width: "440px",backgroundColor:'#FFFFFF',height:'120px',padding:'2px'} : {
+          width: "280px",backgroundColor:'#FFFFFF',height:'120px',padding:'2px'
           
         }}
       >
@@ -24,8 +24,8 @@ const GarWidget = ({type,text,prix,text2,prix2,isSelected,blue}) => {
             <div >
               {isSelected?  <FaCheckCircle
             style={{
-              height: "25px",
-              width: "25px",
+              height: "15px",
+              width: "15px",
               fontSize: "26px",
               fontWeight: "bold",
               color: "#92D050" 
@@ -45,11 +45,11 @@ const GarWidget = ({type,text,prix,text2,prix2,isSelected,blue}) => {
             </div>
          
         </div>
-       {type==1? <h2 style={{fontWeight:'bold',marginTop:'30px'}}>{text}</h2>  :  
+       {type==1? <h4 style={{fontWeight:'bold',marginTop:'30px'}}>{text}</h4>  :  
        type == 2?
             <div style={{display:'flex',alignItems:'center',justifyContent:'space-around'}}>
-<div><h3 style={{ fontWeight:'bold',color: "red" }}>{prix}</h3>
-       <h3 style={{fontWeight:'bold'}}>{text}</h3></div>
+<div><h5 style={{ fontWeight:'bold',color: "red" }}>{prix}</h5>
+       <h5 style={{fontWeight:'bold'}}>{text}</h5></div>
        <FaPlus style={{
               height: "25px",
               width: "25px",
@@ -57,12 +57,12 @@ const GarWidget = ({type,text,prix,text2,prix2,isSelected,blue}) => {
               fontWeight: "bold"
                
             }}/>
-       <div><h3 style={{ fontWeight:'bold',color: "red" }}>{prix}2</h3>
-       <h3 style={{fontWeight:'bold'}}>{text2}</h3></div>
+       <div><h5 style={{ fontWeight:'bold',color: "red" }}>{prix}2</h5>
+       <h5 style={{fontWeight:'bold'}}>{text2}</h5></div>
             </div>
        :
-       <div><h3 style={{ fontWeight:'bold',color: "red" }}>{prix}</h3>
-       <h3 style={{fontWeight:'bold'}}>{text}</h3></div>
+       <div><h5 style={{ fontWeight:'bold',color: "red" }}>{prix}</h5>
+       <h5 style={{fontWeight:'bold'}}>{text}</h5></div>
        
        }
         

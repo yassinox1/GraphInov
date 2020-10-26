@@ -64,8 +64,8 @@ const Garenties = ({type}) => {
           flexDirection: "column",
           justifyContent: "space-between",
           alignItems: "center",
-          height: "1000px",
-          width: "80%",
+          height: "900px",
+          width: "900px",
           backgroundColor: "#FFFFFF",
           margin: "auto",
           padding: "40px",
@@ -80,11 +80,11 @@ const Garenties = ({type}) => {
 
         
           <div>
-          <div style={{ display: "flex",marginBottom:'20px' }}>
+          <div style={{ display: "flex",marginBottom:'20px',alignItems:'center' }}>
                 <FaFolderOpen
-                  style={{ fontSize: "4em", marginRight: "10px" }}
+                  style={{ fontSize: "2em", marginRight: "10px" }}
                 />
-                <h1>Ensemble Du personelle</h1>
+                <h4>Ensemble Du personelle</h4>
               </div>
             <div
               style={{
@@ -93,7 +93,7 @@ const Garenties = ({type}) => {
                 marginBottom: "10px",
               }}
             >
-              <h3 className="mx-5">Date de prise d’effet</h3>
+              <h5 className="mx-5">Date de prise d’effet</h5>
               <form className={classes.container} noValidate>
                 <TextField
                   id="date"
@@ -124,7 +124,7 @@ const Garenties = ({type}) => {
                       marginLeft : "20px"
                     }}
                   />
-                  <h3>Renforts Optionnels au choix du salarié lors de l’affiliation</h3>
+                  <h5>Renforts Optionnels au choix du salarié lors de l’affiliation</h5>
                 </div>}
             <div
               style={{
@@ -151,12 +151,12 @@ const Garenties = ({type}) => {
                 >
                   <FaReadme
                     style={{
-                      width: "30px",
-                      height: "30px",
+                      width: "25px",
+                      height: "25px",
                       marginRight: "120px",
                     }}
                   />
-                  <h3>Base obligatoire</h3>
+                  <h5>Base obligatoire</h5>
                 </div> : ''}
                
                 <div
@@ -166,7 +166,7 @@ const Garenties = ({type}) => {
                     justifyContent: "space-around",
                     backgroundColor:   selected.id == 1 && selected.state? "#BFBFBF" : "#EFF2F4"  , 
                     marginBottom: "10px",
-                    padding: "20px",
+                    padding: "10px",
                     cursor:'pointer'
                   }}
                   onClick={()=>handleSelect(1)}
@@ -222,12 +222,12 @@ const Garenties = ({type}) => {
                 >
                   <FaUserFriends
                     style={{
-                      width: "30px",
-                      height: "30px",
+                      width: "25px",
+                      height: "25px",
                       marginRight: "120px",
                     }}
                   />
-                  <h3>Extension Famille</h3>
+                  <h5>Extension Famille</h5>
                 </div> : ''}
                 <div
                   style={{

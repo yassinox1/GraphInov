@@ -24,8 +24,8 @@ const ProductState = (props) => {
       { id: 3, title: "Indepandant", color: "#53216D" },
     ],
     answers: [
-      { id: 4, title: "Offre Voiture", color: "#92D050" },
-      { id: 5, title: "Offre Vie", color: "#F36886" },
+      { id: 4, title: "Offre Santé", color: "#92D050" },
+      { id: 5, title: "Offre Pévoyance", color: "#F36886" },
     ],
     question: {
       id: "",

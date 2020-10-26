@@ -10,3 +10,15 @@ export const ADD_POPULATION = 'ADD_POPULATION';
 export const ADD_INFO = 'AADD_INFO';
 export const ADD_GARENTIES = 'ADD_GARENTIES'
 export const  ADD_GARENTIES2 = ',ADD_GARENTIES2'
+
+
+//themes
+export const TOGGLE_THEMES = "TOGGLE_THEMES"
+export const  themes = {
+    light: {
+      background: '#EFF2F4',
+    },
+    dark: {
+      background: '#222222',
+    },
+  }

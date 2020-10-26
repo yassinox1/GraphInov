@@ -5,11 +5,11 @@ const InputTextField = ({id,text,type,data,name,value,placeholder, onChange}) =>
   return (
     <div
       style={{ display: "flex", justifyContent: "space-between" }}
-      className="border-bottom border-dark my-4"
+      className="border-bottom border-dark my-2"
     >{
         type=='select'?
         <>
-       <h3 style={{color:'#303841'}}>{text}</h3>
+       <h5 style={{color:'#303841'}}>{text}</h5>
  
         <select style={{width:'60%'}} class="form-control mb-3" id="exampleFormControlSelect1" name={name} onChange={onChange}>
                {
@@ -19,7 +19,7 @@ const InputTextField = ({id,text,type,data,name,value,placeholder, onChange}) =>
         </>
         :
       <>
-      <h3 style={{color:'#303841'}}>{text}</h3>
+      <h5 style={{color:'#303841',fontWeight:'bold'}}>{text}</h5>
       <input
         style={{ width: "60%" }}
         type={type}

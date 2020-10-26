@@ -1,16 +1,23 @@
-import React,{useEffect, useState} from "react";
+import React,{useEffect, useState,Component, Suspense } from "react";
 import "./App.css";
-import Main from "./Components/Main";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+
+import { BrowserRouter as Router, Route,Link} from "react-router-dom";
 import "./styles/main.css";
 import "./styles/style.css";
-import Client from './pages/Client'
-import Contract from './pages/Contract'
+
 import TopBar from "./Components/layouts/TopBar";
 
 import MyState from "./context/product/MyState"
+import TeamesState from "./context/themes/ThemesState"
 import Spinner from './Components/common/Spinner'
+ 
+
+ 
+import Main from "./Components/Main"
+import Client from "./pages/Client"
+import Contract from "./pages/Contract"
 function App() {
+   
   const [spin,setSpin] = useState(true)
   
   useEffect(() => {
@@ -23,7 +30,8 @@ function App() {
  
    
   return (
-   
+  
+    <TeamesState>
     <MyState>
     <Router>
     {spin? 
@@ -33,12 +41,16 @@ function App() {
      :
       <div className="App" style={{backgroundColor:'#EFF2F4'}}>
         <TopBar/>
-        <Route exact path="/" component={Main} />
-        <Route exact path="/client" component={Client} />
-        <Route exact path="/contract" component={Contract} />
+        <Suspense fallback={<h3>Lazyyyyyy</h3>}>
+                <Route exact path='/' component={Main} />
+                <Route path='/client' component={Client} />
+                <Route path='/contract' component={Contract} />
+            </Suspense>
+ 
       </div>}
     </Router>
     </MyState>
+    </TeamesState>
   );
 }
 
